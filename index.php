@@ -26,7 +26,7 @@
 
     <!-- Si l'utilisateur existe, on affiche les recettes -->
     <?php if(isset($loggedUser)): ?>
-        <?php foreach(get_recipes($recipes, $limit) as $recipe) : ?>
+        <?php foreach(get_recipes($recipes) as $recipe) : ?>
         <article>
         <h3><?php echo $recipe['title']; ?> </h3>
         <div><?php echo $recipe['recipe']; ?> </div>
